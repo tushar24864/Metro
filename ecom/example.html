@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/example.css">
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section id="container">
+
+            <button type="button" class="open-bot" onclick="openForm()" ><img src="/img/chat-png-image.png" alt=""
+                    width="50px"></button>
+
+            <br>
+            <div class="chat-box">
+                <div class="headofbox">
+                  <img src="/img/call-girl.png" >
+                  <p class="live-chat"><b>live chat</b></p>
+                  <button type="button" class="close-bot" >&#10006; </button>
+                  <p class="live-chat-des">customer queries preference chat</p>
+                  
+                  <hr>
+                </div>
+                <div class="mainofbox">
+                <div class="form">
+
+                    <form action="chat-bot" id="chat-bot">
+                        <p class="query">how can i help you?</p>
+                        <input type="radio" class="choise" id="lost-items" name="help" value="lost-items">
+                          <label class="choise-in" for="lost-items">lost-items</label><br>
+                          <input type="radio" class="choise" id="recharge" name="help" value="recharge">
+                          <label class="choise-in" for="recharge">recharge my smart card</label><br>
+                          <input type="radio" class="choise" id="booking" name="help" value="booking">
+                          <label class="choise-in" for="booking">booking queries</label>
+                       
+                    </form>
+
+                </div>
+                <div class="form-2">
+                    <form action="chat-bot2" id="boking-query">
+                        <p class="query">booking queries!</p>
+                        <button type="button" class="refund" onclick="refund_m()">
+                            <input type="radio" class="choise-2" id="refund" name="booking" value="refund">
+                              <label class="choise-2-in" for="refund">refund</label><br>
+                        </button>
+                          <button type="button"  onclick="cancelation_t()"> 
+                            <input type="radio" class="choise-2" id="cancelation" name="booking" value="cancelation">
+                              <label class="choise-2-in" for="cancelation">cancelation of ticket</label><br>
+                        </button>
+                        <button type="button"  onclick="chng_dest()">
+                              <input type="radio" class="choise-2" id="chnge-dest" name="booking" value="chng-dest">
+                              <label class="choise-2-in" for="chng-dest">need to change destination</label>
+                        </button>
+                    </form>
+                </div>
+                <div id="lost-items-des">
+                    <p>refund money dolor sit, amet consectetur adipisicing elit. Nemo voluptas dicta laudantium qui
+                        dolore? Asperiores, harum possimus eaque deserunt quis alias eos? Voluptate iste repellendus
+                        consequatur ut cupiditate provident. Deleniti ex architecto tempore non.</p>
+                </div>
+                <div id="recharge-des">
+                    <p>cancelation dolor sit amet consectetur adipisicing elit. Dolor, quos eius ipsam officiis nihil
+                        laboriosam id repellendus incidunt quo deserunt soluta dolorum saepe non qui ab. Laboriosam, rem
+                        necessitatibus dolores repellendus aspernatur maxime consequuntur.</p>
+                </div>
+                <div id="booking-des">
+                    <p>change-dest dolor sit amet consectetur adipisicing elit. Natus magnam ipsa amet unde, nihil
+                        corrupti tempora recusandae aliquam sed harum doloremque dicta doloribus iure dolorum,
+                        laudantium quaerat autem delectus debitis, enim saepe hic sequi.</p>
+                </div>
+            </div>
+            <div class="footofbox">
+
+            </div>
+            </div>
+
+        </section>
+
+    </main>
+    <script>
+        function openForm() {
+            document.getElementById("chat-bot").style.display = "block";
+            // document.getElementById("headofbox").style.display = "block";
+            document.getElementByClassName("open-bot").style.display = 'none';
+        }
+        function closeForm() {
+            document.getElementById("chat-bot").style.display = "none";
+            // document.getElementById("headofbox").style.display = "none";
+            document.getElementByClassName("open-bot").style.display = 'block';
+        }
+        function refund_m() {
+            document.getElementById("refund-money").style.display = "block";
+            document.getElementById("cancelation-ticket").style.display = "none";
+            document.getElementById("change-dest").style.display = "none";
+        }
+        function cancelation_t() {
+            document.getElementById("cancelation-ticket").style.display = "block";
+            document.getElementById("refund-money").style.display = "none";
+            document.getElementById("change-dest").style.display = "none";
+
+
+        }
+        function chng_dest() {
+            document.getElementById("change-dest").style.display = "block";
+            document.getElementById("refund-money").style.display = "none";
+            document.getElementById("cancelation-ticket").style.display = "none";
+
+
+        }
+        function openbox() {
+      if (getElementsByClassName("chat-box").style.display !== "none") {
+        getElementsByClassName("chat-box").style.display = "none";
+      } else {
+        getElementsByClassName("chat-box").style.display = "block";
+      }
+    };
+
+    </script>
+</body>
+
+</html>

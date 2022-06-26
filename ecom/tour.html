@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/tour.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="slide">
+            <img class="images" src="/img/rumi-gae.jpg" alt="">
+            <img class="images" src="/img/kolkata.jpg" alt="">
+            <img class="images" src="/img/hyderabad.jpg" alt="">
+            <img class="images" src="/img/gurgao.jpg" alt="">
+            <img class="images" src="/img/delhi.jpg" alt="">
+            <img class="images" src="/img/chennai.jpg" alt="">
+            <img class="images" src="/img/bangaluru.jpg" alt="">
+            <img class="images" src="/img/jaipur.jpg" alt="">
+            <img class="images" src="/img/mumbai.jpg" alt="">
+            <img class="images" src="/img/kochi.jpg" alt="">
+        </div>
+        <div>
+            <a class="prev" onclick="nextslide(-1)">&#10094;</a>
+            <a class="next" onclick="nextslide(1);">&#10095;</a>
+        </div>
+    </div>
+
+
+
+    <!-- elaboration section -->
+
+
+
+    <section class="container-2">
+        <div class="slide-2">
+            <h2>Lucknow</h2>
+            <div class="elbtn">
+
+                <span class="place">Rumi Gate</span>
+                <p class="place-info">You definitely cannot give this unique architectural marvel a miss while selecting
+                    the most important Places to visit in Lucknow. The Rumi Darwaza is a gateway between the Bara
+                    Imambara and the Chota Imambara. It is one of the few remaining examples of Awadhi architecture
+                    featuring a huge gateway that is sixty feet tall.
+
+                    This gate has been named after the famous thirteenth century Muslim Sufi mystic, Jalal ad-Din
+                    Muhammad Rumi. The Rumi Darwaza is one of most famous Tourist attractions in Lucknow which is
+                    accessible by the public all day.
+
+                    Address:
+                    17/11, Hussainabad Road, Lajpat Nagar Colony.
+                </p>
+                <img class="info-img" src="/img/rumi-gae.jpg" alt="">
+            </div>
+            <hr>
+            <div class="elbtn">
+                <span class="place">Bara Imambara</span>
+                <p class="place-info"> This large structure was built by Nawab Asaf-ud-Daula in 1786-91 and is one of
+                    the architectural wonders of that era.
+                    Its central hall is said to be the largest vaulted chamber in the world. Except for the galleries in
+                    the interior, there is no woodwork in the entire structure. It is now used by Shia Muslims for the
+                    purpose of Azadari. It is believed that the construction of this grand building was started in 1785
+                    when a devastating famine had hit Awadh, and the nawab's objective was to provide employment for
+                    people in the region for almost a decade while the famine lasted.
+                </p>
+                <img class="info-img" src="/img/baraimam.jpg" alt="">
+            </div>
+            <hr>
+            <div class="elbtn"><span class="place">Chota Imambara</span>
+                <p class="place-info"> A golden dome and fine calligraphy on the exterior of the building makes it a
+                    truly exceptional monument of Mughal architecture. It is decorated and lit up during special
+                    occasions.
+                    The Chhota Imambara also known as Hussainabad Imambara stands to the west of Bara Imambara and was
+                    built by Nawab Muhammad Ali Shah (1837-42). It is more ornate in design with gilded dome, several
+                    turrets, exquisite chandeliers said to be brought from Belgium, gilt-edged mirrors and colourful
+                    stuccos which adorn the interiors.
+
+                </p>
+                <img class="info-img" src="/img/chota-imambara.jpg" alt="">
+            </div>
+            <hr>
+            <div class="elbtn"><span class="place">Charbagh Railway Station</span>
+                <p class="place-info"> It gives an ideal traditional warm welcome to every visitor.
+                    Overpowering in dimensions yet aesthetically designed, Charbagh railway station built in 1914 which
+                    incorporates the best of Rajasthani and Mughal architecture.
+
+                </p>
+                <img class="info-img" src="/img/charbagh.jpg" alt="">
+            </div>
+            <hr>
+            <div class="elbtn"><span class="place">Vidhan Sabha</span>
+                <p class="place-info"> The foundation stone of the grand building of the Council House (Vidhan Bhawan)
+                    in Lucknow was laid by the then Governor Sir Spencer Harcourt Butler on December 15, 1922 and the
+                    building was inaugurated on February 21, 1928.
+                    The construction of the building was done by Messrs Martin and Co. The Chief Architects were Sir
+                    Swinon Jacob and Sri Heera Singh. At that time a sum of Rs 21 lakh was sanctioned for the
+                    building.It is one of the finest examples of Indo-European architectural craftsmanship of the
+                    twentieth century. The front part of this crescent shaped two storeyed structure is built with
+                    carved light brown sandstone blocks from Mirzapur (Chunar).
+
+                </p>
+                <img class="info-img" src="/img/vidhan.jpg" alt="">
+            </div>
+            <hr>
+
+        </div>
+    </section>
+
+
+
+
+    <!-- script -->
+
+
+
+
+
+    <script>
+        let i = 0;
+        let imgs;
+        slideshow(i);
+
+        function slideshow(num) {
+            let slides = document.getElementsByClassName('slide');
+            let imgs = document.getElementsByClassName('images');
+            console.log(imgs)
+            if (num == imgs.length) {
+                i = 0; num = 0;
+            }
+            if (num == -1) {
+                num = imgs.length - 1;
+                i = imgs.length - 1;
+            }
+            for (let y of imgs) {
+                y.style.display = 'none';
+            }
+
+            imgs[num].style.display = 'block';
+
+
+        }
+        function nextslide(x) {
+            console.log('clicked');
+            i = i + x;
+
+            slideshow(i);
+
+
+        }
+
+    </script>
+</body>
+
+</html>

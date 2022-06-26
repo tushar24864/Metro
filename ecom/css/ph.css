@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Tai+Heritage+Pro:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Basic&display=swap');
+
+
+.headofph{
+    background-color: darkcyan;
+    height: 15vh;
+    padding: 5vh 0vw 0vh 5vw;
+    font-size: 25px;
+    margin: 0vh 0vw 5vh 0vw;
+}
+.headofph h2{
+    margin: 0vh 0vw 0vh 10vw;
+color: aliceblue;
+border-bottom: 2px solid aliceblue;
+width: 50vw;
+font-family: 'Gentium Basic', serif;
+}
+.ph-info{
+    font-family: 'Tai Heritage Pro', serif;
+    
+background-color: aliceblue;
+margin:2vh 10vw 0vh 10vw;
+list-style: inside;
+padding: 20px;
+font-size: larger;
+}
+.ph-pics{
+    margin: 5vh 10vw 0vh 10vw;
+    display: grid;
+    grid-template-columns: 28vw 28vw 0vw;
+    grid-template-rows: 50vh;
+}
+.ph-pics img{
+ width: 350px;
+ border: 2px solid blue;
+border-radius: 15px;
+box-shadow: 7px 7px 7px 7px #6495ed66;
+}

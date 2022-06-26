@@ -1,0 +1,57 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Tai+Heritage+Pro:wght@700&display=swap');
+
+footer {
+    background-color: black;
+    color: aliceblue;
+    font-size: medium;
+    font-family: 'Tai Heritage Pro', serif;
+}
+header{
+    background-color: rgb(1, 2, 3);
+    color: hsl(0, 14%, 96%)
+    
+    
+}
+nav ul li a{
+    padding: 0px 7px;
+
+     color: white;
+     
+     text-decoration: none;
+}
+.start.destination{
+    color: rgb(220, 200, 20);
+  }
+main{
+    
+    background-color: white;
+    color: black;
+    height: 70vh;
+    
+}
+.journey{
+    background-color: #00b7ff4d;
+border: solid rgb(164, 220, 238);
+border-radius: 2%;
+}
+
+.journey-submit{
+    background-color: brown;
+    color: burlywood;
+    cursor: pointer;
+}
+.m-map{
+    background-color: #c9ffea;
+    height: 20vh;
+    width: 30vw;
+    border: 2%;
+}
+.m-map p{
+ color: black;
+}
+.m-map aside{
+    color: grey;
+}
+.map-btn{
+    background-color: red;
+} */

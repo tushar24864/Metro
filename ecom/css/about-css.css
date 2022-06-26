@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Tai+Heritage+Pro:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Basic&display=swap');
+header {
+  
+  
+  
+  width: 100vw;
+  top: 0;
+  display: contents;
+}
+
+nav ul {
+  
+  
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background-color: darkcyan;
+  flex-wrap: wrap;
+  height: 15vh;
+  width: 100vw;
+
+}
+
+nav ul li {
+
+  list-style-type: none;
+  padding: 10px;
+
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Gentium Basic', serif;
+  font-weight: bold;
+  font-weight: 850;
+}
+
+.search {
+  background-color: whitesmoke;
+  border-radius: 30px;
+}
+
+.searchbar {
+  background: transparent;
+  border: 0;
+  outline: none;
+  padding: 5px;
+  margin: 5px;
+}
+
+.search button {
+  margin-right: 12px;
+  background: transparent;
+  border: 0;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #9ea1b3;
+  cursor: pointer;
+}
+main{
+  margin: 0vh 10vw 0vh 10vw;
+  font-family: 'Gentium Basic', serif;
+  font-size: larger;
+}
+main img{
+  width:80vw;
+  height: 60vh;
+  margin: 5vh 0vw 0vh 0vw;
+ }
+main p{
+  margin: 5vh 0vw 0vh 0vw;
+}
