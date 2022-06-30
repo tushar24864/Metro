@@ -39,8 +39,7 @@ def saveContact(request):
         email = request.POST['email']
         phone = request.POST['phone']
         message = request.POST['message']
-        print(name, email, phone, message)
         instance = contactForm(name=name, email=email, phone=phone, message=message)
         instance.save()
-    return render(request, "contact.html")
+        return render(request, "contact.html")
 
