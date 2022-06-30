@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Tai+Heritage+Pro:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Basic&display=swap');
+
+body {
+    background-color: #f1e5e7d1;
+}
+.headofsafety{
+    background-color: darkcyan;
+    height: 15vh;
+    padding: 5vh 0vw 0vh 0vw;
+    font-size: 25px;
+    margin: 0vh 0vw 5vh 0vw;
+}
+.headofsafety h2{
+    margin: 0vh 0vw 0vh 10vw;
+color: aliceblue;
+border-bottom: 2px solid aliceblue;
+font-family: 'Gentium Basic', serif;
+width: 25vw;
+}
+
+.container {
+
+    margin: 0;
+    width: 50vw;
+    display: flex;
+    border: 2px solid rgb(247, 227, 227);
+    background-color: black;
+    overflow: hidden;
+    align-content: center;
+    justify-content:flex-start;
+    border-width: 5vw;
+
+}
+
+.slide img{
+    display: none;
+    width: 40vw;
+    height: 50vh;
+
+}
+
+.prev,
+.next {
+
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 3vw;
+    height: 8vh;
+    margin: 0vh 50vw 0vh 0vw;
+    padding: 6px;
+    color: black;
+    font-weight: bold;
+    font-size: 50px;
+    transition: 0.9s ease;
+    border-radius: 0px 25px 25px 0px;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    position: absolute;
+    border-radius:25px 0px 0px 18px;
+}
+
+.prev {
+    
+    left: 0;
+ 
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgb(106, 102, 102);
+}
+.safety-info{
+    /* right: 0;
+position: absolute;
+margin: -70vh 0vw 0vh 0vw; */
+font-size: larger;
+padding-left: 11px;
+font-family: 'Tai Heritage Pro', serif;
+}
+.flexforsafety{
+    display: flex;
+    list-style: inside;
+    flex-wrap: wrap;
+}
