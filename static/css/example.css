@@ -1,0 +1,94 @@
+.open-bot{
+    display: block;
+    align-self: center;
+}
+#container{
+    display: flex;
+align-content: center;
+justify-content: center;
+height: 100vh;
+width: 100vw;
+margin: auto;
+}
+/* .form{
+    background-color: #07b5bb70;
+height: 20vh;
+width: 25vw;
+border-radius: 5px;
+margin: 230px 0px 0px 0px;
+display: none;
+} */
+#chat-bot{
+    display: flex;
+flex-direction: column;
+}
+.query{
+    text-align: center;
+margin: 0px 0px 0px 65px;
+background-color: floralwhite;
+padding: 5px;
+border-radius: 50px;
+}
+.choise{
+    align-self: baseline;
+}
+.choise-in{
+    margin: -35px 0px 0px 22px;
+}
+.close-bot{
+    margin: -5.5vh 0vw 0vh 28.5vw;
+    position: absolute;
+}
+#chat-bot{
+    display: none;
+    background-color: #07b5bb70;
+height: 20vh;
+width: 25vw;
+border-radius: 5px;
+margin: 230px 0px 0px 0px;
+}
+#lost-items-des{
+    display: none;
+}
+#recharge-des{
+    display: none;
+}
+#booking-des{
+    display: none;
+}
+.chat-box{
+    width: 30vw;
+height: 70vh;
+background-color: #ebe3e7;
+border: 2px solid #2f2b28;
+border-radius: 15px 5px 0px 10px;
+/* display: none; */
+}
+.chat-box img{
+    width: 5vw;
+border-radius: 50%;
+/* display: none; */
+}
+.live-chat{
+    font-size: 4vh;
+    margin: -10vh 0vw 0vh 6vw;
+    color: aliceblue;
+  /* display: none; */
+}
+.live-chat-des{
+    margin: 1vh 0vw 2vh 9vw;
+    color: whitesmoke;
+    /* display: none; */
+}
+.headofbox{
+    background-color: darkblue;
+    border-radius: 15px 5px 0px 0px;
+    height: 11vh;
+    /* display: none; */
+}
+.form{
+    margin: -30vh 0vw 0vh 2vw;
+}
+.chat-bot2{
+    /* display: none; */
+}

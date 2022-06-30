@@ -1,0 +1,178 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/utility.css' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'img/fav-icon.jpg' %}" >
+
+
+
+</head>
+<body>
+    <!-- <img class="bg-bodyimg" src="/img/background-image.jpg" alt=""> -->
+    <header id="header">
+        <nav>
+            <ul>
+                <li> <a href="{% url 'home' %}">Home</a></li>
+                <li> <a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'recharge' %}">Recharge Smart Card</a></li>
+                <li><a href="{% url 'facility' %}">Facility</a></li>
+                <li> <a href="{% url 'contact' %}">Contact</a></li>
+                <li>
+                    <div class="search">
+                        <form action="#">
+                            <input type="text" class="searchbar" placeholder=" Search " name="search">
+                            <button type="submit">
+                                &#128269;
+                            </button>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <!-- MAIN -->
+
+
+
+
+    <main>
+        <section class="journey">
+            <div class="box1">
+                <img class="bg-img" src="{% static 'img/metro-rail.jpg' %}" alt="">
+                <br>
+                <form action="booking.html" oninput="res.value=10" method="get" class="form-journey">
+                    <h3>Plan Your Journey</h3>
+                    <br>
+                    <div>
+                        <label for="place" id="city"> <b>City</b></label>
+                        <br>
+                        <select class="city-name" name="city name" id="city-name">
+                            <option value="">select city</option>
+                            <option value="Kolkata">Kolkata</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value=" Chennai"> Chennai</option>
+                            <option value="Bengaluru">Bengaluru</option>
+                            <option value=" Hyderabad"> Hyderabad</option>
+                            <option value="Jaipur">Jaipur</option>
+                            <option value="Gurgaon">Gurgaon</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Kochi">Kochi</option>
+                            <option value="Lucknow">Lucknow</option>
+                        </select>
+                        <br>
+                        <br>
+                        <label for="start" class="start">from </label>
+                        <input type="location1">
+                        <br>
+                        <br>
+                        <label for="destination" class="destination">To </label>
+                        <input type="location2">
+                        <br>
+                        <br>
+                        <output name="res"></output>
+                        <button class="journey-submit">BOOK</button>
+                    </div>
+                </form>
+            </div>
+            <div class="m-map">
+                <p class="map"><B>Metro Route Map</B></p>
+                <article class="map-art">plan your journey now more accurately</article>
+                <div>
+                    <form action="city-map.html"></form>
+                    <label for="map-city">Choose City</label>
+                    <select name="city name" id="city-name">
+                        <option value="">select city</option>
+                        <option value="Kolkata">Kolkata</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value=" Chennai"> Chennai</option>
+                        <option value="Bengaluru">Bengaluru</option>
+                        <option value=" Hyderabad"> Hyderabad</option>
+                        <option value="Jaipur">Jaipur</option>
+                        <option value="Gurgaon">Gurgaon</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Kochi">Kochi</option>
+                        <option value="Lucknow">Lucknow</option>
+                    </select>
+                    <button class="map-btn">
+                        <img src="{% static 'img/route-map.jpg' %}" alt="GO">
+                    </button>
+                </div>
+            </div>
+            <div class="notice-box">
+                <h4>Notice & Alert</h4>
+                <hr id="notice-hr">
+                <div class="board">
+                    <div class="notices">
+                        <p>New Metro Projects </p>
+                    </div>
+                    <hr>
+                    <div class="notices">
+                        <p>Vacancies</p>
+                    </div>
+                    <hr>
+                    <div class="notices">
+                        <p>metro helps to reduce air pollution</p>
+                    </div>
+                    <hr>
+                    <div class="notices">
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                    <hr>
+                    <div class="notices">
+                        <p>Lorem, ipsum dolor.</p>
+                    </div>
+                    <hr>
+                    <div class="notices">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <hr>
+                    <div class="notices">
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </section>
+        <div>
+            <div>
+                <div class="extentions">
+                    <a href="recharge.html" id="card-recharge">Smart Card Recharge<a>
+                    <a id="tour" href="tour.html">Tour</a>
+                    <a href="facility.html" id="facility" >Facility</a>
+                    <a href="lost-item.html" id="lost">Lost Item</a>
+                    <a href="#" id="timing">Metro Timing</a>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <a
+                        href="https://images.unsplash.com/photo-1650173600436-da9f9a03fc7b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZG9taW5vJ3MlMjBwaXp6YXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <section class="foot">
+            <div class="foot">
+                <a href="#header" ><img src="" alt="logo"></a>
+                <a href="">English</a><span> | </span><a href="#">hindi</a>
+                <hr>
+                <p><b> help line no.</b><br>
+                783746934</p>
+            </div>
+        </section>
+             <div class="copyright">
+             copyright &copf; imrcl.com
+            </div>
+    </footer>
+</body>
+</html>
