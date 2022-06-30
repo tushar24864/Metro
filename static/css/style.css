@@ -107,7 +107,7 @@ width: 100vw; */
     margin: auto;
     align-items: center;
     justify-content: space-around;
-   padding: 18vh 0vw 0vh 0vw; 
+    padding: 22vh 5vw 0vh 5vw; 
     margin: 0px 15px 0px 0px; 
     /* display: flex;
     width: 21vw;
@@ -286,7 +286,7 @@ grid-template-rows: 20vh 0vw;
 }
 #card-recharge{
     background-color: #13f4d4;
-    color: black;
+    color: #3f4fa2;
     width: 20vw;
     height: 9vh;
     border: 2px solid #0c8e82;
@@ -294,6 +294,9 @@ grid-template-rows: 20vh 0vw;
     text-align: center;
     text-decoration: none;
     font-family: 'Gentium Basic', serif;
+    padding: 19px;
+    font-size: 19px;
+    font-weight: bold;
 }
 /* #hystory{
     background-color: #13f4d4;
@@ -308,7 +311,7 @@ grid-template-rows: 20vh 0vw;
 } */
 #tour{
     background-color: #13f4d4;
-color: black;
+    color: #3f4fa2;
 width: 20vw;
 height: 9vh;
 border: 2px solid #0c8e82;
@@ -316,10 +319,13 @@ border-radius: 20px;
 text-align: center;
 text-decoration: none;
 font-family: 'Gentium Basic', serif;
+padding: 19px;
+font-size: 19px;
+font-weight: bold;
 }
 #facility{
     background-color: #13f4d4;
-color: black;
+    color: #3f4fa2;
 width: 20vw;
 height: 9vh;
 border: 2px solid #0c8e82;
@@ -328,10 +334,13 @@ text-align: center;
 text-decoration: none;
 font-family: 'Gentium Basic', serif;
 margin: -10vh 0vw 0vh 0vw;
+padding: 19px;
+font-size: 19px;
+font-weight: bold;
 }
 #lost{
     background-color: #13f4d4;
-color: black;
+    color: #3f4fa2;
 width: 20vw;
 height: 9vh;
 border: 2px solid #0c8e82;
@@ -340,10 +349,14 @@ text-align: center;
 text-decoration: none;
 font-family: 'Gentium Basic', serif;
 margin: -10vh 0vw 0vh 0vw;
+padding: 19px;
+font-size: 19px;
+font-weight: bold;
+
 }
 #timing{
     background-color: #13f4d4;
-    color: black;
+    color: #3f4fa2;
     width: 20vw;
     height: 9vh;
     border: 2px solid #0c8e82;
@@ -352,6 +365,9 @@ margin: -10vh 0vw 0vh 0vw;
     text-decoration: none;
     font-family: 'Gentium Basic', serif;
     margin: 0vh 0vw 0vh -10vw;
+    padding: 19px;
+    font-size: 19px;
+    font-weight: bold;
 }
 
 .foot div{
