@@ -16,3 +16,19 @@ def facility(request):
 
 def contact(request):
     return render(request, "contact.html")
+
+def physical(request):
+    return render(request, "ph.html")
+
+def women(request):
+    return render(request, "women.html")
+
+def security(request):
+    return render(request, "security.html")
+
+def tour(request):
+    return render(request, "tour.html")
+
+def lost_item(request):
+    return render(request, "lost-item.html")
+

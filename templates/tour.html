@@ -1,3 +1,4 @@
+{%load static%}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,22 +7,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/tour.css">
+    <link rel="stylesheet" href="{% static 'css/tour.css' %}">
 </head>
 
 <body>
     <div class="container">
         <div class="slide">
-            <img class="images" src="/img/rumi-gae.jpg" alt="">
-            <img class="images" src="/img/kolkata.jpg" alt="">
-            <img class="images" src="/img/hyderabad.jpg" alt="">
-            <img class="images" src="/img/gurgao.jpg" alt="">
-            <img class="images" src="/img/delhi.jpg" alt="">
-            <img class="images" src="/img/chennai.jpg" alt="">
-            <img class="images" src="/img/bangaluru.jpg" alt="">
-            <img class="images" src="/img/jaipur.jpg" alt="">
-            <img class="images" src="/img/mumbai.jpg" alt="">
-            <img class="images" src="/img/kochi.jpg" alt="">
+            <img class="images" src="{% static 'img/rumi-gae.jpg'%}" alt="">
+            <img class="images" src="{% static 'img/kolkata.jpg'%}" alt="">
+            <img class="images" src="{% static 'img/hyderabad.jpg'%}" alt="">
+            <img class="images" src="{% static 'img/gurgao.jpg'%}" alt="">
+            <img class="images" src="{% static 'img/delhi.jpg'%}" alt="">
+            <img class="images" src="{% static 'img/chennai.jpg'%}" alt="">
+            <img class="images" src="{% static 'img/bangaluru.jpg'%}" alt="">
+            <img class="images" src="{% static 'img/jaipur.jpg'%}" alt="">
+            <img class="images" src="{% static 'img/mumbai.jpg'%}" alt="">
+            <img class="images" src="{% static 'img/kochi.jpg'%}" alt="">
         </div>
         <div>
             <a class="prev" onclick="nextslide(-1)">&#10094;</a>
@@ -53,7 +54,7 @@
                     Address:
                     17/11, Hussainabad Road, Lajpat Nagar Colony.
                 </p>
-                <img class="info-img" src="/img/rumi-gae.jpg" alt="">
+                <img class="info-img" src="{% static 'img/rumi-gae.jpg' %}" alt="">
             </div>
             <hr>
             <div class="elbtn">
@@ -66,7 +67,7 @@
                     when a devastating famine had hit Awadh, and the nawab's objective was to provide employment for
                     people in the region for almost a decade while the famine lasted.
                 </p>
-                <img class="info-img" src="/img/baraimam.jpg" alt="">
+                <img class="info-img" src="{% static 'img/baraimam.jpg' %}" alt="">
             </div>
             <hr>
             <div class="elbtn"><span class="place">Chota Imambara</span>
@@ -79,7 +80,7 @@
                     stuccos which adorn the interiors.
 
                 </p>
-                <img class="info-img" src="/img/chota-imambara.jpg" alt="">
+                <img class="info-img" src="{% static 'img/chota-imambara.jpg' %}" alt="">
             </div>
             <hr>
             <div class="elbtn"><span class="place">Charbagh Railway Station</span>
@@ -88,7 +89,7 @@
                     incorporates the best of Rajasthani and Mughal architecture.
 
                 </p>
-                <img class="info-img" src="/img/charbagh.jpg" alt="">
+                <img class="info-img" src="{% static 'img/charbagh.jpg' %}" alt="">
             </div>
             <hr>
             <div class="elbtn"><span class="place">Vidhan Sabha</span>
@@ -102,7 +103,7 @@
                     carved light brown sandstone blocks from Mirzapur (Chunar).
 
                 </p>
-                <img class="info-img" src="/img/vidhan.jpg" alt="">
+                <img class="info-img" src="{% static 'img/vidhan.jpg' %}" alt="">
             </div>
             <hr>
 

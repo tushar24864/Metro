@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facility</title>
-    <link rel="stylesheet" href="/css/facility.css">
+    <link rel="stylesheet" href="{% static 'css/facility.css' %}">
 </head>
 <body>
     <header></header>
@@ -14,17 +15,17 @@
         <div class="facility">
             
             <div>
-                <img src="/img/Metro_Rail_Womens_Coach_main.jpg" alt=""><p>Facilities for womens</p>
-                <a href="women.html">View More</a>
+                <img src="{% static 'img/Metro_Rail_Womens_Coach_main.jpg' %}" alt=""><p>Facilities for womens</p>
+                <a href="{% url 'women' %}">View More</a>
             </div>
             <div>
-                <img src="/img/wheelchair-user-delhi-metro-station-wecapable.jpg" alt=""><p>facilities for physical handicaped</p><a href="ph.html">View More</a>
+                <img src="{% static 'img/wheelchair-user-delhi-metro-station-wecapable.jpg' %}" alt=""><p>facilities for physical handicaped</p><a href="{% url 'physical' %}">View More</a>
             </div>
             <div>
-                <img src="/img/17.jpg" alt=""><p>facility for drinking water</p>
+                <img src="{% static 'img/17.jpg' %}" alt=""><p>facility for drinking water</p>
             </div>
             <div>
-                <img src="/img/security.jpg" alt=""><p>facility for security</p><a href="securiy.html">View More</a>
+                <img src="{% static 'img/security.jpg' %}" alt=""><p>facility for security</p><a href="{% url 'security' %}">View More</a>
             </div>
         </div>
     </main>

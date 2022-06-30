@@ -18,6 +18,7 @@
     <header id="header">
         <nav>
             <ul>
+                <li> <a href="{% url 'home' %}"> <img class="main-icon" src="{%static 'img/fav-icon.jpg' %} " alt="logo"></a></li>
                 <li> <a href="{% url 'home' %}">Home</a></li>
                 <li> <a href="{% url 'about' %}">About</a></li>
                 <li><a href="{% url 'recharge' %}">Recharge Smart Card</a></li>
@@ -145,10 +146,10 @@
         <div>
             <div>
                 <div class="extentions">
-                    <a href="recharge.html" id="card-recharge">Smart Card Recharge<a>
-                    <a id="tour" href="tour.html">Tour</a>
-                    <a href="facility.html" id="facility" >Facility</a>
-                    <a href="lost-item.html" id="lost">Lost Item</a>
+                    <a href="{% url 'recharge' %}" id="card-recharge">Smart Card Recharge<a>
+                    <a id= "tour" href="{% url 'tour' %}">Tour</a>
+                    <a href="{% url 'facility' %}" id="facility" >Facility</a>
+                    <a href="{% url 'lost_item' %}" id="lost">Lost Item</a>
                     <a href="#" id="timing">Metro Timing</a>
                 </div>
             </div>
@@ -163,7 +164,7 @@
     <footer>
         <section class="foot">
             <div class="foot">
-                <a href="#header" ><img src="" alt="logo"></a>
+                <a href="#header" ><img src="{% static 'img/fav-icon.jpg' %}" alt="logo"></a>
                 <a href="">English</a><span> | </span><a href="#">hindi</a>
                 <hr>
                 <p><b> help line no.</b><br>

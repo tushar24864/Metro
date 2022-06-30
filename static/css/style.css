@@ -39,6 +39,9 @@ nav ul {
     width: 100vw;
 
 }
+.main-icon{
+    width: 75px;
+}
 
 nav ul li {
 
@@ -276,7 +279,7 @@ border: 2px solid rgb(255, 255, 5);
     display: grid;
 height: 60vh;
 width: 100vw;
-grid-template-columns: 43vh 0vw 0vh;
+grid-template-columns: 45vh 0vw 0vh;
 margin: 0vh 0vw 0vh 30vw;
 grid-template-rows: 20vh 0vw;
     
@@ -369,4 +372,8 @@ text-align: center;
     background-color: darkcyan;
 color: white;
 text-align: center;
+}
+.foot a img{
+    width: 75px;
+
 }
