@@ -22,12 +22,21 @@
         </div>
         <div class="bodyofcontact">
 
-            <form action="feedback">
+            <form method="post" action="{% url 'saveContact' %}">
+                {% csrf_token %}
                 
 
-                    <div class="name"><input type="text" placeholder="NAME" size="65vw"><br></div>
-                    <div><input type="email" name="email" id="email" placeholder="E-mail" size="30vw"><br></div>
-                    <div><input type="tel" name="tel" id="tel" placeholder="mobile no." size="25vw"><br></div>
+                    <div class="name">
+                        <input type="text" id="name" name="name" placeholder="NAME" size="65vw"><br>
+                    </div>
+
+                    <div>
+                        <input type="email" id="email" name="email" placeholder="E-mail" size="30vw"><br>
+                    </div>
+
+                    <div>
+                        <input type="phone"  id="phone" name="phone" placeholder="mobile no." size="25vw"><br>
+                    </div>
 
                     <div><select name="metro city name" id=" metro-city-name" >
                             <option value="">select city</option>
@@ -49,8 +58,12 @@
                             <option value="feedback">feedback</option>
                         </select></div>
 
-                    <div> <textarea name="feedback" id="feedback" placeholder="Message" cols="30" rows="5"  > </textarea></div>
-                    <div><button id="submit-feedback" > Send Message</div>
+                    <div>
+                        <textarea id="message" name="message" placeholder="Message" cols="30" rows="5"  > </textarea>
+                    </div>
+                    <div>
+                        <button type="submit" id="submit-feedback" > Send Message</button>
+                    </div>
             </form>
         </div>
     </main>

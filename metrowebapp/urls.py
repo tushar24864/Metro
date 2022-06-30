@@ -2,6 +2,11 @@ from django.contrib import admin
 from django.urls import path, include
 from . import views
 
+# Django admin customization
+admin.site.site_header = "MetroWebApp Admin"
+admin.site.site_title = "metrowebapp's dashbord"
+admin.site.index_title = "Welcome to this Portal!"
+
 urlpatterns = [
        path('', views.home, name="home"),
        path('about', views.about, name="about"),
@@ -13,6 +18,7 @@ urlpatterns = [
        path('security', views.security, name="security"),
        path('tour', views.tour, name="tour"),
        path('lost_item', views.lost_item, name="lost_item"),
+       path('saveContact', views.saveContact, name="saveContact"),
       
 
 ]
