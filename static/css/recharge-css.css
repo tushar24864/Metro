@@ -63,8 +63,8 @@ nav ul li a {
     cursor: pointer;
 }
 .recharge-form{
-    height: 23vh;
-width: 50vw;
+        height: 30vh;
+    width: 55vw;
 background-color: lavenderblush;
 border: 2px solid bisque;
 border-radius: 10px;
@@ -131,7 +131,8 @@ font-size: 28px;
 .updates{
     background-color: aliceblue;
     margin: 2vh 0vw 0vh 0vw;
-height: 30vh;
+   height: 50vh;
+    
 width: 20vw;
 border: 5px solid cadetblue;
 border-radius: 10px;
