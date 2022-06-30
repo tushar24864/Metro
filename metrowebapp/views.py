@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
+from metrowebapp.models import contactForm
 # Create your views here.
 
 def home(request):
@@ -31,4 +32,14 @@ def tour(request):
 
 def lost_item(request):
     return render(request, "lost-item.html")
+
+def saveContact(request):
+    if request.method=="POST":
+        name = request.POST['name']
+        email = request.POST['email']
+        phone = request.POST['phone']
+        message = request.POST['message']
+        instance = contactForm(name=name, email=email, phone=phone, message=message)
+        instance.save()
+        return render(request, "contact.html")
 
