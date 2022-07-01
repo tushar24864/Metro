@@ -42,6 +42,10 @@ nav ul li a {
   font-weight: bold;
   font-weight: 850;
 }
+ nav ul li .main-icon
+ {
+  width: 75px;
+  }
 
 .search {
   background-color: whitesmoke;

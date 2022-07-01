@@ -10,7 +10,9 @@ header {
     top: 0;
     display: contents;
 }
-
+.main-icon{
+    width: 75px;
+}
 nav ul {
     /* position:fixed; */
     z-index: 999;
