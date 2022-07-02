@@ -26,12 +26,12 @@ header {
     top: 0;
     display: contents;
 }
-marquee{
-      border:#ff0202 2px SOLID ; 
-        padding: 0px 0px 0px 0px;
-        margin: 115px 92px 0px 103px;
-        background-color: #ffff37;
-        border-radius: 30px;
+#status-bar{
+    border:#ff0202 2px SOLID ; 
+    padding: 0px 0px 0px 0px;
+    margin: 115px 92px 0px 103px;
+    background-color: #ffff37;
+    border-radius: 30px;
 }
 
 nav ul {
