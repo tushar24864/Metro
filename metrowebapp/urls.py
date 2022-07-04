@@ -2,6 +2,10 @@ from django.contrib import admin
 from django.urls import path, include
 from . import views
 
+admin.site.site_header = "Metro Admin"
+admin.site.site_title = "MetroApp's Dashboard"
+admin.site.index_title = "Welcome to the portal!"
+
 urlpatterns = [
        path('', views.home, name="home"),
        path('about', views.about, name="about"),
