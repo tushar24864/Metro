@@ -9,17 +9,18 @@
     <link rel="stylesheet" href="{% static 'css/signin.css' %}">
 </head>
 <body>
-    <form action="action_page.php" method="post">
+    <form action="signin" method="post">
+      {% csrf_token %}
         <div class="imgcontainer">
           <img src="img_avatar2.png" alt="Avatar" class="avatar">
         </div>
       
         <div class="container">
-          <label for="uname"><b>Username</b></label>
-          <input type="text" placeholder="Enter Username" name="uname" required>
+          <label for="username"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="username" required>
       
-          <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" required>
+          <label for="pass1"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="pass1" required>
       
           <button type="submit">Login</button>
           <label>
