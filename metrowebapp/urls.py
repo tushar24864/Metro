@@ -18,6 +18,8 @@ urlpatterns = [
        path('tour', views.tour, name="tour"),
        path('lost_item', views.lost_item, name="lost_item"),
        path('saveContact', views.saveContact, name="saveContact"),
+       path('signup', views.signup, name="signup"),
+       path('signin', views.signin, name="signin"),
       
 
 ]
